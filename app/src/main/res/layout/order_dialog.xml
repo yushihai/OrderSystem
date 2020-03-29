@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/order_title"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:text="订单" />
+
+    <TextView
+        android:id="@+id/order_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/order_title"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:text="¥" />
+
+    <TextView
+        android:id="@+id/order_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/order_sign"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/order_line"
+        android:layout_width="250dp"
+        android:layout_height="2dp"
+        android:layout_below="@+id/order_title"
+        android:background="#000000"
+        android:layout_marginTop="10dp"/>
+
+    <ListView
+        android:id="@+id/order_listview"
+        android:layout_width="230dp"
+        android:layout_height="300dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/order_line"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none"
+        android:listSelector="@android:color/transparent"
+        android:divider="#00000000"
+        android:dividerHeight="10dp" />
+
+    <Button
+        android:id="@+id/order_cancel"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/order_listview"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:text="取消" />
+
+    <Button
+        android:id="@+id/order_submit"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/order_listview"
+        android:layout_toRightOf="@+id/order_cancel"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:text="下单" />
+
+</RelativeLayout>

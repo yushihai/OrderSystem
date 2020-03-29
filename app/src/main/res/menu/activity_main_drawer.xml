@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu"
+            android:icon="@drawable/navigation_menu"
+            android:title="菜单" />
+        <item
+            android:id="@+id/nav_order"
+            android:icon="@drawable/navigation_vieworder"
+            android:title="查看订单" />
+        <item
+            android:id="@+id/nav_consume"
+            android:icon="@drawable/navigation_consumerecord"
+            android:title="消费记录" />
+        <item
+            android:id="@+id/nav_cook"
+            android:icon="@drawable/navigation_cookcenter"
+            android:title="小厨师中心" />
+        <item
+            android:id="@+id/nav_admin"
+            android:icon="@drawable/navigation_admincenter"
+            android:title="管理员中心" />
+        <item
+            android:id="@+id/nav_server"
+            android:icon="@drawable/navigation_servercenter"
+            android:title="服务员中心" />
+    </group>
+</menu>
