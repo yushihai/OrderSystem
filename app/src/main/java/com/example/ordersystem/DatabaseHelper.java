@@ -57,11 +57,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(CREATE_SERVER);
         db.execSQL(CREATE_COOK);
         db.execSQL(CREATE_USER);
+        db.execSQL(CREATE_USERORDER);
+        db.execSQL(CREATE_ORDER);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db,int oldVersion,int newVersion){
-        db.execSQL(CREATE_USERORDER);
-        db.execSQL(CREATE_ORDER);
+        
     }
 }
